@@ -15,10 +15,9 @@ import static com.codeborne.selenide.Selenide.*;
 public class CardDeliveryTest {
 
     @BeforeEach
-    public void setForm() {
-        Configuration.headless = true;
+    void SetUp() {
+        //Configuration.headless = true;
         open("http://localhost:9999/");
-        SelenideElement form = $("form");
     }
 
     @Test
