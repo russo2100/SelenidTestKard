@@ -197,7 +197,7 @@ public class CardDeliveryTest {
     void shouldSendFormNameWithYo() {
         $("[data-test-id=city] input").setValue("Москва");
         $("[data-test-id=date] input").doubleClick().sendKeys(DataGenerator.generateDate(3, "dd.MM.yyyy"));
-        $("[data-test-id=name] input").setValue("Алёна Иванова");
+        $("[data-test-id=name] input").setValue("Алена Иванова");
         $("[data-test-id=phone] input").setValue("+79031234567");
         $("[data-test-id=agreement]").click();
         $(By.className("button")).click();
